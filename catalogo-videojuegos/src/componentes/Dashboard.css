@@ -1,0 +1,131 @@
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__layout {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard__main {
+  flex: 1;
+  min-width: 0;
+  padding: 32px;
+}
+
+.dashboard__hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.dashboard__eyebrow {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.dashboard__heading {
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.dashboard__counter {
+  flex-shrink: 0;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.dashboard__search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: var(--radius);
+  background: #efe9d8;
+  color: #4a4756;
+}
+
+.dashboard__search input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1c1b22;
+  font-size: 0.9rem;
+}
+
+.dashboard__search input::placeholder {
+  color: #6f6b7a;
+}
+
+.dashboard__search:focus-within {
+  outline: 2px solid var(--accent);
+}
+
+.dashboard__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dashboard__chip {
+  padding: 7px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dashboard__chip:hover {
+  border-color: var(--accent);
+}
+
+.dashboard__chip--active,
+.dashboard__chip--active:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.dashboard__toolbar {
+  margin: 24px 0 16px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.dashboard__empty {
+  padding: 48px 0;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}

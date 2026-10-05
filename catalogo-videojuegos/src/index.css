@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg: #141318;
+  --surface: #1c1b22;
+  --surface-2: #24232c;
+  --border: #34323d;
+  --text: #f4f1ea;
+  --text-muted: #9b98a6;
+
+  --accent: #5b3cf5;
+  --accent-hover: #6f54ff;
+
+  --lime: #d7ff52;
+  --pink: #ff8ad1;
+  --lilac: #c9b8ff;
+  --orange: #ff7a45;
+  --yellow: #ffd23f;
+
+  --radius: 4px;
+
+  --font-display: 'Anton', 'Impact', sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--bg);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
